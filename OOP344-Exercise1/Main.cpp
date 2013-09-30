@@ -11,10 +11,10 @@ int main()
    Employee alex(3, "Alex");
    Employee sarah(4, "Sarah");
 
-   dan.setBoss(man);
-   mike.setBoss(man);
-   alex.setBoss(man);
-   sarah.setBoss(man);
+   dan.setBoss(&man);
+   mike.setBoss(&man);
+   alex.setBoss(&man);
+   sarah.setBoss(&man);
 
    dan.work(2);
    mike.work(2);
@@ -58,6 +58,6 @@ int main()
    man.report();
    man.report();
 
-
+   
    return 0;
    }
